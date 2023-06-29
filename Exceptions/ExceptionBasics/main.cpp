@@ -19,10 +19,10 @@ void functionCanThrow()
 
 int main( int argC , char ** argV )
 {
-    try{
+    try
+    {
         functionCanThrow();
     }
-
     catch(int e)
     {
         cout<<"Exception Thrown "<<e<<endl;
@@ -31,7 +31,6 @@ int main( int argC , char ** argV )
     {
         cout<<"Exception Thrown "<<c<<endl;
     }
-
     catch(string& strEx)
     {
         cout<<"Exception Thrown "<<strEx<<endl;

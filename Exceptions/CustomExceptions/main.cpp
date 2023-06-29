@@ -4,7 +4,7 @@ using namespace std;
 class MyException:public exception
 {
 public:
-    const char* what() const _GLIBCXX_USE_NOEXCEPT{
+    const char* what() const _GLIBCXX_USE_NOEXCEPT {
         return "Something bad happened";
     }
 };
@@ -16,6 +16,7 @@ class Test{
         throw MyException();
     }
 };
+
 int main(int charC , char ** argV)
 {
     try{
