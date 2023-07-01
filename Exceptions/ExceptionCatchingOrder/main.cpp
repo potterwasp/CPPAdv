@@ -5,7 +5,6 @@ void FuncCanThrow()
 {
     bool error1 = true;
     bool error2 = false;
-
     if(error1)
     {
         throw bad_alloc();
@@ -14,11 +13,7 @@ void FuncCanThrow()
     {
         throw exception();
     }
-
 }
-
-
-
 
 int main(int charC , char ** argV)
 {
