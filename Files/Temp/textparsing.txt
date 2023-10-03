@@ -1,0 +1,3 @@
+Dog:Woof
+Cat:Meaw
+Cow:Moo
