@@ -24,7 +24,7 @@ int main(int charC , char ** argV)
         cout<<"Exception Happened : "<<e.what()<<endl;
 
     }
-    catch(bad_alloc& e)///this will never be caught as std exception will be caught befor this 
+    catch(bad_alloc& e)///this will never be caught as std exception will be caught before this 
     {
         cout<<"Exception Happened :"<<e.what()<<endl;
     }

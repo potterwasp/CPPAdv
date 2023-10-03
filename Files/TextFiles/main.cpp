@@ -35,8 +35,19 @@ void ReadFromFile()
     }
 
 }
+
+void ReadFromFileGeneric()
+{
+    std::fstream gfstream;
+    gfstream.open("/home/rohit/Code/Temp/textfiles.txt",std::ios::in);
+    char * buff = new char[1024];
+    gfstream.seekg(6,std::ios_base::beg);
+    gfstream.read(buff,1024);
+    std::cout<<"File Contents gen :\n"<<buff<<std::endl;
+}
 int main()
 {
     WriteToFile("hello world");
     ReadFromFile();
+    ReadFromFileGeneric();
 }
